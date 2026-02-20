@@ -1,0 +1,15 @@
+#include<stdio.h>
+int mySqrt(int x){
+int i=0;
+while(i*i<=x){
+i++;
+}
+return i-1;
+}
+int main(){
+int x;
+printf("Enter number:");
+scanf("%d",&x);
+printf("Square root:%d",mySqrt(x));
+return 0;
+}
